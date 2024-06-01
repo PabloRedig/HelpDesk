@@ -5,6 +5,7 @@ import { auth } from './firebaseConfig';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
+import "./App.css"
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -23,7 +24,7 @@ function App() {
     return <div>Loading...</div>;
   }
 
-  return (
+  return (<>
     <Routes>
       <Route
         path="/"
@@ -40,6 +41,7 @@ function App() {
         element={<Register />}
       />
     </Routes>
+  </>
   );
 }
 
