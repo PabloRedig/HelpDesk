@@ -1,0 +1,44 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Card {
+    width: 500px;
+    min-height: 100px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    box-sizing: border-box;
+    border-radius: .7em;
+    background-color: #263850d3;
+    color: #fff;
+}
+
+.Card label {
+    margin: 0px 10px;
+}
+
+.btnCancelar {
+    width: auto;
+    height: 25px;
+    padding: 0px 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 40px;    
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
+    background-color: rgb(255, 5, 5);
+    color: #fff;
+}

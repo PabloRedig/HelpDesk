@@ -1,0 +1,40 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    width: 500px;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+
+    border-radius: .7em ;
+    background-color: #263850d3;
+    color: #fff;
+}
+
+.Container input, button {
+    width: 100%;
+    height: 30px;
+    border-radius: .5em;
+    border: none;
+    margin: 5px 0;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);   
+}
+
+.Container input::placeholder{
+    position: relative;
+    left: 10px;
+    color: #000;
+    text-shadow: none;
+    font-weight: 900;
+}
+
+.Container button{
+    text-shadow: none;
+    font-weight: 600;
+    color: #fff;
+    background-color: green;
+}
