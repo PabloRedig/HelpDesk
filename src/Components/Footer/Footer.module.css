@@ -7,8 +7,9 @@
     align-items: center;
     position: fixed;
     bottom: 0;
+    
     margin-top: 10px ;
-
+    z-index: 10;
     color: #fff;
     background-color: #263850d3;
 }

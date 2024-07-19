@@ -3,13 +3,11 @@ import { collection, getDocs, query, where } from 'firebase/firestore';
 import { auth, db } from '../../firebaseConfig';
 import { onAuthStateChanged } from 'firebase/auth';
 
-import LogoutButton from '../../Components/Logout Button/LogoutButton';
 import TicketList from '../../Components/Ticket List/TicketList';
 import Ticketform from '../../Components/Ticket Form/Ticketform';
-import Login from '../../Pages/Login/Login';
 
-import style from "./Home.module.css";
 import Footer from '../../Components/Footer/Footer';
+import Header from '../../Components/Header/Header';
 
 export default function Home() {
   const [chamados, setChamados] = useState([]);
@@ -43,10 +41,7 @@ export default function Home() {
 
   return (
     <>
-      <div className={style.header}>
-        <p>Seja Bem-vindo ao Sistema, {userName}</p>
-        {user ? <LogoutButton onLogout={() => setUser(null)} /> : <Login onLogin={setUser} />}
-      </div>
+      <Header />     
 
       {user ? (
         <>
@@ -61,5 +56,3 @@ export default function Home() {
     </>
   );
 }
-
-// 
